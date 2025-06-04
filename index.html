@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-  <link rel="stylesheet" href="estilos/mobilefirst.css">
+    <link rel="stylesheet" href="estilos/mobilefirst.css">
 </head>
+
 <body>
     <main>
-        <section>
-            <img src="https://m.media-amazon.com/images/I/81Z+V7GJIEL._h1_.png" alt="">
+        <section id="login">
+            <div id="imagem">
+<img src="imagens/predio.jpg" alt="predio">
+            </div>
+
+            <div id="formulario">
+
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <input type="email" name="email" id="iemail" autocomplete="on" placeholder="seu e-mail" required>
+                    <input type="password" name="senha" id="isenha" autocomplete="on" required maxlength="12"
+                        minlength="8" placeholder="sua senha"> <br>
+
+                    <input class="butao" type="button" value="Entrar">
+                    <input class="butao" type="button" value="Esqueci a senha">
+
+                </form>
+            </div>
         </section>
-        <article>
-
-            <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-        <form action="#" method="post" autocomplete="on">
-        <input type="email" name="email" id="iemail" autocomplete="on" placeholder="seu e-mail" required>
-        <input type="password" name="senha" id="isenha" autocomplete="on" required maxlength="12" minlength="8" placeholder="sua senha"> <br>
-
-        <input class="butao" type="button" value="Entrar">
-           <input class="butao" type="button" value="Esqueci a senha">
-
-        </form>
-        </article>
     </main>
 </body>
+
 </html>
